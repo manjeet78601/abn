@@ -1,21 +1,21 @@
 export class HomeConstants {
 
    public static HOME_PAGE = {
-      PLAN_HEADER1: `<p class="col-blk">Life Insurance For The </br>Morden Family.</p>`,
-      PLAN_BODY: `<p>To help protect your family and prepare your
-                      family for life’s events, you need coverage that
-                      fits comfortably in your budget and adapts to
-                      your changing lifestyle, income and needs.</p>`,
-      PLAN_HEADER2: 'WE GOT YOU COVERED',
-      PLAN_SUB_HEADER2: 'Holistic Financial Planning',
-      PLAN_BODY2: `<p>We’ll help you budget for your real life,
-                          support you to develop a holistic view of your
-                          finances, and prepare you for the worst-case
-                          scenario.</p>`,
-      PLAN_BODY_2: `<p>We help all families: single-parent homes, two-
-                          parent homes, multigenerational families and
-                          empty nesters. No matter your circumstances,
-                          we got you covered. </p>`,
+      PLAN_HEADER1: `<p>|| श्री गणेश वंदना  मंत्र||</p>`,
+      PLAN_BODY: `<p>॥ गजाननं भूतगणादि सेवितं, कपित्थ जम्बूफलसार भक्षितम् ॥</p>
+       <p>॥ उमासुतं शोक विनाशकारणं, नमामि विघ्नेश्वर पादपङ्कजम् ॥</p>`,
+   
+       // PLAN_HEADER2: ' ||श्री हनुमान वंदना मंत्र||',
+      PLAN_SUB_HEADER2: '||श्री हनुमान वंदना मंत्र||',
+      PLAN_BODY2: `<p>||चरण शरण में आय के, धरूं तिहारा ध्यान
+      संकट से रक्षा करो
+      संकट से रक्षा करो, पवनपुत्र हनुमान||</p>`,
+      PLAN_BODY_2: `<p>||दुर्गम काज बनाय के, कीन्हें भक्त निहाल
+      अब मोरी विनती सुनो
+      अब मोरी विनती सुनो, हे अंजनि के लाल ||</p>`,
+      PLAN_BODY_3: `<p>||हाथ जोड़ विनती करूं, सुनो वीर हनुमान
+      कष्टों से रक्षा करो
+      कष्टों से रक्षा करो, राम भक्ति देहुँ दान पवनपुत्र हनुमान ||</p>`,
 
       PLAN_HEADER3: 'SIMPLIFIED, PERSONALIZED',
       PLAN_SUB_HEADER3: `<p class="col-blk">Let Us Help You Plan Your
