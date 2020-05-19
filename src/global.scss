@@ -31,8 +31,8 @@
 
 .wrapper {
   padding: 0 20px;
-  background:#FAB735;
-  //  background:#FCC304;
+  // background:#FEF9E7 #ffffee;;
+   background: darkred;
 }
 header {
   text-align: center;
@@ -50,7 +50,7 @@ h3,
 h4,
 h5,
 h6 {
-  color:#FE3B4C;
+  color:#fff;
   // color: #5a5a5a;
 }
 p {
@@ -74,6 +74,7 @@ button:focus {
   }
 }
 .black_color{
+  
   background-color: black;
   color:white
 }
@@ -161,6 +162,9 @@ button:focus {
     color: #fff !important;
     opacity: 0.5;
     cursor: not-allowed;
+    background: red;
+    // color: #fff;
+    border-radius: 40px;
   }
 }
 .f-weight-n {
@@ -173,7 +177,8 @@ button:focus {
   background-color: #ffffff;
 }
 .col-blk {
-  color: #000000;
+  white-space: pre-wrap;
+  color: red;
 }
 .col-wht {
   color: #ffffff;
@@ -200,8 +205,9 @@ button:focus {
   font-size: 15px;
 }
 .fs-16 {
-  font-size: 16px;
-}
+  font-size: 20px;
+  white-space: pre-line;
+ }
 .fs-18 {
   font-size: 18px;
 }
@@ -316,9 +322,9 @@ button:focus {
 }
 //footer
 .footer {
-  margin-top: 50px;
-  height: 141px;
-  background-color: #272727;
+  margin-top: 5px;
+  // height: 141px;
+  background-color: darkred;
   color: white;
   padding: 30px;
 
@@ -746,11 +752,13 @@ float: left;
   background-color: #434343;
 }
 .mat-flat-button.mat-primary, .mat-raised-button.mat-primary, .mat-fab.mat-primary, .mat-mini-fab.mat-primary {
-  background-color:  #000000;;
+  background-color:  red;
+  border-radius:40px;
 }
 .back-btn {
-  background-color: #fff;
-  color: #000000;
+  background-color: red !important;
+  border-radius:40px !important;
+  color: #fff;
   height: 36px;
   border-color: #00B5AD !important;
 }

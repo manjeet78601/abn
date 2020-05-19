@@ -64,7 +64,7 @@
   }
   mat-card-content > p  {
     font-family: Proxima Soft;
-    font-size: 16px;
+    font-size: 20px;
     margin-top: 20px;
     color:#fff;
     
@@ -119,4 +119,14 @@
   );
   .status{
     width: 240px !important;
+  }
+
+  .red_color{
+    width: 100%;
+    text-align: center;
+    margin: 0px 0px 10px;
+    padding: 8px;
+    border: 1px;
+    // color: red;
+    background: #f08827;
   }

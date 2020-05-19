@@ -1,0 +1,86 @@
+<!-- Header -->
+<ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-back-button text="" color='dark'>
+          <ion-icon name="arrow-back"></ion-icon>
+        </ion-back-button>
+      </ion-buttons>
+      <ion-buttons slot="start" color="dark">
+        <ion-menu-button color="dark"></ion-menu-button>
+      </ion-buttons>
+      <ion-title class="ion-text-center app-name">
+        <img src="./../../../assets/img/lifePlusLogo.png" alt="Life+ Logo" (click)="gotoHomePage()">
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <!-- End of header -->
+  <!-- Main content -->
+  <ion-content>
+    <section class="content">
+      <header>
+        <img class="img-header" src="./../../../../assets/img/sunderkandpath.svg" alt="Total Budget Calculator" srcset="">
+      </header>
+  
+      <section class="wrapper" fxLayout="column" fxLayoutAlign="center center">
+        <header>
+          <p class="col-blk fnt">
+            {{ DOM_CONSTANTS.PAGE_HEADER }}
+          </p>
+          <mat-label class="lightgray-text">{{ amountLeft | currency}} per month</mat-label>
+          <h5 class="fs-16">{{ DOM_CONSTANTS.PAGE_SUB_TEXT}}</h5>
+        </header>
+        <!-- <div class="w-100 pt-4">
+          <p class="fs-14 mb-1"><strong>{{ DOM_CONSTANTS.TOTAL_TEXT | uppercase}}</strong></p>
+        </div> -->
+        <!-- <table class="w-100 fs-14 mb-4">
+          <tr *ngFor="let item of totals">
+            <td class="w-50 h-25">
+             <strong>{{ item.title }}</strong> 
+            </td>
+            <td class="w-50 h-25">
+              <strong>{{ item.value | currency}}</strong>
+            </td>
+          </tr>
+        </table> -->
+      
+  
+      <!-- <section class="bg-lightgray ion-padding pb-5" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="10px">
+        <h2 class="py-3 col-blk">Fine Tune your budget</h2>
+        <div *ngFor="let que of totals" fxLayout="column">
+          <mat-label>{{ que.title }}</mat-label>
+          <mat-form-field appearance="outline">
+            <span matPrefix>$</span>
+            <input type="number" class="align-end" matInput [(ngModel)]="que.value" >
+          </mat-form-field> -->
+          <!-- <mat-slider [max]="que.MAX" [min]="que.MIN" [step]="que.STEP" [(ngModel)]="que.TOTAL">
+          </mat-slider> -->
+          <!-- {{ que.TOTAL | currency}}      (change)="setAmountLeft()" </div>-->
+        
+        <div fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="10px">
+          <div class="ion-text-center">
+            <button mat-stroked-button class="back-btn mr-5" routerLink="/home/bajrang-baan">BACK</button>
+            <button mat-flat-button color="primary" (click)="getQuote()">{{ BTN.STEP_THREE | uppercase}}</button>
+          </div>
+          <!-- <a *ngIf="!isUerLoggedIn" class="link" (click)="createAccount()">{{ BTN.CREATE_ACCOUNT }}</a>
+        -->
+        </div>
+      </section>
+      </section>
+ 
+    <!-- Footer -->
+    <footer class="footer mt-0" fxLayout="row" fxLayoutAlign="space-between" fxLayoutGap="40px">
+      <ion-text class="align-item-bottom">
+        <ion-label class="fl-footer-content">
+          77 Water St 8th Floor,<br /> Manhattan, NY 10005
+        </ion-label>
+      </ion-text>
+      <ion-text class="align-item-bottom">
+        <ion-label class="fl-footer-content">
+          Copyright Life+ © 2020
+        </ion-label>
+      </ion-text>
+    </footer>
+    <!-- End of footer -->
+  </ion-content>
+  <!-- End of main content -->

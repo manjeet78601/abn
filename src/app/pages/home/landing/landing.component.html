@@ -10,7 +10,7 @@
       <ion-menu-button color="dark"></ion-menu-button>
     </ion-buttons>
     <ion-title class="ion-text-center app-name">
-      <img src="./../../../assets/img/lifePlusLogo.png" alt="Life+ Logo">
+      <img src="../../../../assets/img/hanumaanlogonewformat.png" alt="Life+ Logo">
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -21,10 +21,11 @@
   <!-- Landing page starts from here -->
   <section class="content">
     <div fxLayout="row" fxLayoutAlign="center center">
-      <img src="../../assets/img/welcome-lifeplus.svg" alt="Welcome_Img" />
+      <img src="../../assets/img/bajrang.svg" alt="Welcome_Img" />
     </div>
     <div class="wrapper ion-text-center" fxLayout="column">
-      <mat-card style="background: #FAB735;">
+      <mat-card style="background: darkred">
+          <!-- #FEF9E7    #ffffee -->
         <mat-card-title [innerHtml]=DOM_CONSTANTS.PLAN_HEADER1></mat-card-title>
         <mat-card-content>
           <p [innerHtml]=DOM_CONSTANTS.PLAN_BODY ></p>
@@ -42,8 +43,71 @@
         </mat-card-content>
       </mat-card>
     </div>
+    <mat-card style="background:darkred">
+        <div>
+            <mat-card-title mat-flat-button class="red_color" [routerLink]="['/home/hanumaan-chalisa']">
+        {{DOM_CONSTANTS.PLAN_STEP_TWO_100.TITLE}}</mat-card-title>
+        </div>
+    <div>
+        <mat-card-title mat-flat-button class="red_color" [routerLink]="['/home/bajrang-baan']">
+    {{DOM_CONSTANTS.PLAN_STEP_TWO.TITLE}}</mat-card-title>
+    </div>
+    <div>
+      <mat-card-title mat-flat-button class="red_color" [routerLink]="['/home/sunderkand']">
+    {{DOM_CONSTANTS.PLAN_STEP_TWO_001.TITLE}}</mat-card-title>
+    </div>
+    <div>
+      <mat-card-title mat-flat-button class="red_color" [routerLink]="['/home/hanumaan-ashtak']">
+    {{DOM_CONSTANTS.PLAN_STEP_TWO_002.TITLE}}</mat-card-title>
+    </div>
+    <div>
+      <mat-card-title mat-flat-button class="red_color" [routerLink]="['/home/hanumaan-arti']">
+    {{DOM_CONSTANTS.PLAN_STEP_TWO_003.TITLE}}</mat-card-title>
+    </div>
+    <div>
+      <mat-card-title mat-flat-button class="red_color" [routerLink]="['/home/hanumaan-arti']">
+    {{DOM_CONSTANTS.PLAN_STEP_TWO_004.TITLE}}</mat-card-title>
+    </div>
+    <div>
+        <mat-card-title mat-flat-button class="red_color" [routerLink]="['/home/hanumaan-chalisa']">
+      {{DOM_CONSTANTS.PLAN_STEP_TWO_005.TITLE}}</mat-card-title>
+      </div>
+      <div>
+          <mat-card-title mat-flat-button class="red_color" [routerLink]="['/home/hanumaan-chalisa']">
+        {{DOM_CONSTANTS.PLAN_STEP_TWO_006.TITLE}}</mat-card-title>
+        </div>
+        <div>
+            <mat-card-title mat-flat-button class="red_color" [routerLink]="['/home/hanumaan-chalisa']">
+          {{DOM_CONSTANTS.PLAN_STEP_TWO_007.TITLE}}</mat-card-title>
+          </div>
+          
+           <div>
+              <mat-card-title mat-flat-button class="red_color" [routerLink]="['/home/hanumaan-chalisa']">
+            {{DOM_CONSTANTS.PLAN_STEP_TWO_008.TITLE}}</mat-card-title>
+            </div>
+          <!--  <div>
+                <mat-card-title mat-flat-button class="red_color" [routerLink]="['/home/hanumaan-chalisa']">
+              {{DOM_CONSTANTS.PLAN_STEP_TWO.TITLE}}</mat-card-title>
+              </div>
+              <div>
+                  <mat-card-title mat-flat-button class="red_color" [routerLink]="['/home/hanumaan-chalisa']">
+                {{DOM_CONSTANTS.PLAN_STEP_TWO.TITLE}}</mat-card-title>
+                </div>
+                <div>
+                    <mat-card-title mat-flat-button class="red_color" [routerLink]="['/home/hanumaan-chalisa']">
+                  {{DOM_CONSTANTS.PLAN_STEP_TWO.TITLE}}</mat-card-title>
+                  </div>
+                  <div>
+                      <mat-card-title mat-flat-button class="red_color" [routerLink]="['/home/hanumaan-chalisa']">
+                    {{DOM_CONSTANTS.PLAN_STEP_TWO.TITLE}}</mat-card-title>
+                    </div>
+                    <div>
+                        <mat-card-title mat-flat-button class="red_color" [routerLink]="['/home/hanumaan-chalisa']">
+                      {{DOM_CONSTANTS.PLAN_STEP_TWO.TITLE}}</mat-card-title>
+                      </div> -->
+  </mat-card>
     <!--  -->
-    <div fxLayout="row" fxLayoutAlign="center center">
+    <!-- <div fxLayout="row" fxLayoutAlign="center center">
       <img src="../../assets/img/Plan_Ahead-02.svg" alt="Plan_Ahead_Img" />
     </div>
     <div class="wrapper ion-text-center" fxLayout="column">
@@ -54,18 +118,18 @@
           <p [innerHtml]=DOM_CONSTANTS.PLAN_BODY3></p>
         </mat-card-content>
       </mat-card>
-    </div>
+    </div> -->
 
     <!--  -->
-    <div fxLayout="row" fxLayoutAlign="center center">
+    <!-- <div fxLayout="row" fxLayoutAlign="center center">
       <img src="../../assets/img/Life_Plus_Collaboration-01-01.svg" alt="Life_Plus_Img" />
     </div>
     <div class="wrapper ion-text-center" fxLayout="column ">
       <div class="mt-40">
         <button mat-flat-button class="black_color" [routerLink]="['/home/chooseplan']" routerLinkActive="router-link-active">{{DOM_CONSTANTS.PLAN_GETTING_STARTED.TITLE}}</button>
-      </div>
+      </div> -->
       <!-- step One and two -->
-      <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="50px" class="mt-50">
+      <!-- <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="50px" class="mt-50">
         <div fxLayout="column" fxLayoutGap="10px">
           <div fxLayoutAlign="center center">
             <img src="../../assets/img/step1.svg" alt="Winner_Img" />
@@ -82,16 +146,16 @@
             <img src="../../assets/img/step2.svg" alt="Stroke_Img" />
           </div>
           <div>
-            <button mat-flat-button class="black_color" [routerLink]="['/home/insurance-calculator']">
+            <button mat-flat-button class="black_color" [routerLink]="['/home/hanumaan-chalisa']">
           {{DOM_CONSTANTS.PLAN_STEP_TWO.TITLE}}</button>
           </div>
           <div>
             <p class="btn-content" [innerHtml]=DOM_CONSTANTS.PLAN_STEP_TWO.CONTENT></p>
           </div>
         </div>
-      </div>
+      </div> -->
       <!-- step three and Four -->
-      <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="50px">
+      <!-- <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="50px">
         <div fxLayout="column" fxLayoutGap="10px">
           <div fxLayoutAlign="center center">
             <img src="../../assets/img/step3.svg" alt="Star_Img" />
@@ -116,9 +180,9 @@
           </div>
         </div>
 
-      </div>
+      </div> -->
       <!-- Read more -->
-      <div class="20px">
+      <!-- <div class="20px">
         <mat-card>
           <div>
             <mat-card-subtitle class="col-blk">{{DOM_CONSTANTS.PLAN_HEADER4}}</mat-card-subtitle>
@@ -138,7 +202,7 @@
                 <img src="../../assets/img/female.svg" alt="Female_Img"/>
               </div>
               <div>
-                <button mat-flat-button class="black_color" [routerLink]="['/home/insurance-calculator']" >
+                <button mat-flat-button class="black_color" [routerLink]="['/home/hanumaan-chalisa']" >
                 {{DOM_CONSTANTS.PLAN_READ_MORE.TITLE}}</button>
               </div>
             </div>
@@ -147,14 +211,14 @@
                 <img src="../../assets/img/male.svg" alt="male_Img" />
               </div>
               <div>
-                <button mat-flat-button class="black_color" [routerLink]="['/home/insurance-calculator']" >
+                <button mat-flat-button class="black_color" [routerLink]="['/home/hanumaan-chalisa']" >
                 {{DOM_CONSTANTS.PLAN_READ_MORE.TITLE}}</button>
               </div>
             </div>
           </div>
         </mat-card>
       </div>
-    </div>
+    </div> -->
   </section>
   <!-- Landing page ends here -->
   <!-- Footer -->
