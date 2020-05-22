@@ -73,7 +73,7 @@ export class UserService {
   quotes = [
     {
       productId: 1,
-      prodImg: './../../../../assets/img/quote-img.svg',
+      prodImg: './../../../../assets/img/sunderkandpath.svg',
       quoteHeader: 'Quote Details',
       quoteDetails: 'This plan includes the best life insurance for anyone who needs flexible term policies.',
       custAvgRatings: 4,
@@ -104,7 +104,7 @@ export class UserService {
     },
     {
       productId: 2,
-      prodImg: './../../../../assets/img/quote-img.svg',
+      prodImg: './../../../../assets/img/hanumaan_ashtak.svg',
       quoteHeader: 'Quote Details',
       quoteDetails: 'This plan includes the best life insurance for anyone who needs permanent life insurance policies.',
       custAvgRatings: 3,
@@ -134,7 +134,7 @@ export class UserService {
     },
     {
       productId: 3,
-      prodImg: './../../../../assets/img/quote-img.svg',
+      prodImg: './../../../../assets/img/hanumaan-aarti.svg',
       quoteHeader: 'Quote Details',
       quoteDetails: `This plan includes the best life insurance for anyone who needs flexible term
        policies with a cash payment at regular intervals.`,
@@ -165,7 +165,7 @@ export class UserService {
     },
     {
       productId: 4,
-      prodImg: './../../../../assets/img/quote-img.svg',
+      prodImg: './../../../../assets/img/hanumaan-sunderkan.svg',
       quoteHeader: 'Quote Details',
       quoteDetails: 'This plan includes the best life insurance for anyone who needs simple term policies.',
       custAvgRatings: 3,

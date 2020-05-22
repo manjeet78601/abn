@@ -206,12 +206,13 @@ export class HanumaanArtiComponent implements OnInit {
   }
 
   goToNext() {
-    this.menuService.setCompletedMenu('Compare Quotes');
-    this.userService.setQuotesCompleted();
-    if (this.auth.isUserLoggedIn === true) {
-      this.router.navigate(['/medical-test']);
-    } else {
-      this.router.navigate(['/auth/signup']);
+    // this.menuService.setCompletedMenu('Compare Quotes');
+    // this.userService.setQuotesCompleted();
+    // if (this.auth.isUserLoggedIn === true) {
+    //   this.router.navigate(['/medical-test']);
+    // } else 
+    {
+      this.router.navigate(['/home/ramayan-arti']);
     }
   }
   getQuotes() {
@@ -221,7 +222,7 @@ export class HanumaanArtiComponent implements OnInit {
     return this.userService.createAccount();
   }
   getPrevious() {
-    this.router.navigate(['/home/health']);
+    this.router.navigate(['/home/ramayan-arti']);
   }
   gotoHomePage() {
     this.router.navigate(['/home']);

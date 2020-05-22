@@ -335,7 +335,7 @@ export class HomeConstants {
       },
    ];
 
-   public static BUDGET_HEADER = 'श्री बजरंग बाण का पाठ ';
+   public static BUDGET_HEADER = ' ॥श्री बजरंग बाण का पाठ  ॥';
    public static BUDGET_SUB_HEADER = 
    `दोहा
    निश्चय प्रेम प्रतीत ते, विनय करें सनमान ॥
@@ -2009,7 +2009,7 @@ export class HomeConstants {
    };
 
    // Insurance calculator
-   public static PAGE_SUBTITLE = 'श्री हनुमान चालीसा';
+   public static PAGE_SUBTITLE = '|| श्री हनुमान चालीसा ||';
    public static LIFE_INSURANCE_HEADER = `|| श्रीगुरु चरन सरोज रज, निज मनु मुकुरु सुधारि।
    बरनऊं रघुबर बिमल जसु, जो दायकु फल चारि।।
    बुद्धिहीन तनु जानिके, सुमिरौं पवन-कुमार।

@@ -13,18 +13,18 @@
     </ion-title>
   </ion-toolbar>
 </ion-header>
-<ion-content>
+<ion-content class="content">
   <!--qoute page start here  -->
-  <section class="wrapper-plan quotesSec" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="10px">
+  <section class="wrapper-plan quotesSec"  fxLayout="column" fxLayoutAlign="center center">
     <!-- <h2 class="exp-header">Compare Quotes</h2> -->
     <!-- <header fxLayoutAlign="center center">
       <h2 class="header-title">{{DOM_CONSTANTS.QUOTE_HEADER }}</h2>
     </header> -->
-    <p fxLayoutAlign="center center" class="plan-sub-header">{{DOM_CONSTANTS.QUOTE_SUB_HEADER }}</p>
+    <!-- <p fxLayoutAlign="center center" class="plan-sub-header">{{DOM_CONSTANTS.QUOTE_SUB_HEADER }}</p> -->
     <!--Quotes-->
     <ngb-carousel #currSlide (click)="onSlideClicked(currSlide)">
       <ng-template ngbSlide *ngFor="let quo of quotes; let i = index" [id]="quo.productId">
-        <mat-card class="plan-card mat-elevation-z0 ">
+        <mat-card class="plan-card mat-elevation-z0 " style="background: darkred;">
           <div fxLayout="column" class="quote-img">
             <img [src]="quo.prodImg" alt="dummy-image">
           </div>
@@ -84,8 +84,8 @@
               <div [hidden]="!showDiv" fxLayout="column" fxLayoutAlign="center center">
                 <button mat-stroked-button class="quo-btn bg-blk col-wht"
                   (click)="goToNext()">{{BTN.GET_QUOTE}}</button>
-                <button mat-flat-button (click)="collapse[i] = !collapse[i];hideDetails(quo.productId,currSlide)"
-                  class="btn-mat-card mt-10">{{BTN.CLOSE}}</button>
+                <!-- <button mat-flat-button (click)="collapse[i] = !collapse[i];hideDetails(quo.productId,currSlide)"
+                  class="btn-mat-card mt-10">{{BTN.CLOSE}}</button> -->
               </div>
             </div>
           </mat-card-content>
@@ -95,10 +95,11 @@
   </section>
   <!-- chart sections -->
 
-  <section class="wrapper ion-text-center">
-    <p class="mt-50 header-title">{{DOM_CONSTANTS.QUOTE_COMP}}</p>
+<section class="wrapper ion-text-center"> 
+    <p class="mt-50 header-title">{{DOM_CONSTANTS.QUOTE_COMP}}</p> 
+    <p class="mt-50 header-content">{{DOM_CONSTANTS.QUOTE_COMP1}}</p>
     <!-- Monthly bar chart -->
-    <section fxLayoutAlign="center center">
+    <!-- <section fxLayoutAlign="center center">
       <ion-card>
         <ion-card-header>
           <h2 class="quo-sub-header" style="float:left">Monthly Premium</h2>
@@ -109,46 +110,46 @@
         </ion-card-content>
       </ion-card>
       
-    </section>
-    <div class="quoTbl" fxLayoutAlign="center center">
+    </section> -->
+    <!-- <div class="quoTbl" fxLayoutAlign="center center"> -->
       <!--Comparision Tool-->
-      <mat-table [dataSource]="dsMonthlyPremium" *ngIf="dsMonthlyPremium.length > 0"
+      <!-- <mat-table [dataSource]="dsMonthlyPremium" *ngIf="dsMonthlyPremium.length > 0"
         class="mat-elevation-z0 mt-30 quo-tbl">
         <ng-container matColumnDef="comparison">
           <mat-header-cell *matHeaderCellDef> </mat-header-cell>
           <mat-cell *matCellDef="let element" class="mat-cell-content"> {{element.comparison}} </mat-cell>
-        </ng-container>
+        </ng-container> -->
         <!-- Prudential Column -->
-        <ng-container matColumnDef="prudential">
+        <!-- <ng-container matColumnDef="prudential">
           <mat-header-cell fxLayoutAlign="center center" *matHeaderCellDef>Prudential</mat-header-cell>
           <mat-cell fxLayoutAlign="center center" *matCellDef="let element">{{element.prudential}}
           </mat-cell>
-        </ng-container>
+        </ng-container> -->
         <!-- New York Life Column -->
-        <ng-container matColumnDef="nyLife">
+        <!-- <ng-container matColumnDef="nyLife">
           <mat-header-cell fxLayoutAlign="center center" *matHeaderCellDef> New York Life </mat-header-cell>
           <mat-cell fxLayoutAlign="center center" *matCellDef="let element">{{element.nyLife}}
           </mat-cell>
-        </ng-container>
+        </ng-container> -->
         <!-- Mass Mutual Column -->
-        <ng-container matColumnDef="massMutual">
+        <!-- <ng-container matColumnDef="massMutual">
           <mat-header-cell fxLayoutAlign="center center" *matHeaderCellDef> Mass Mutual </mat-header-cell>
           <mat-cell fxLayoutAlign="center center" *matCellDef="let element">{{element.massMutual}}
           </mat-cell>
-        </ng-container>
+        </ng-container> -->
         <!--  Liberty Mutual Column -->
-        <ng-container matColumnDef="libertyMutual">
+        <!-- <ng-container matColumnDef="libertyMutual">
           <mat-header-cell fxLayoutAlign="center center" *matHeaderCellDef> Liberty Mutual </mat-header-cell>
           <mat-cell fxLayoutAlign="center center" *matCellDef="let element">{{element.libertyMutual}}
           </mat-cell>
         </ng-container>
         <mat-header-row *matHeaderRowDef="displayedColumns" class="mat-cell-content"></mat-header-row>
         <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
-      </mat-table>
-    </div>
+      </mat-table> 
+    </div>-->
     <!-- $Policy bar chart -->
-    <section fxLayoutAlign="center center">
-      <ion-card>
+     <!-- <section fxLayoutAlign="center center">
+     <ion-card>
         <ion-card-header>
           <h2 class="quo-sub-header" style="float:left">Policy Coverage</h2>
         </ion-card-header>
@@ -157,45 +158,45 @@
             [labels]="barChartLabelsPolicy" [legend]="true" chartType="bar" [options]="chartOption"
             [colors]="barChartLegendColors"></canvas>
         </ion-card-content>
-      </ion-card>
-    </section>
-    <div class="quoTbl" fxLayoutAlign="center center">
+      </ion-card> 
+    </section>-->
+    <!-- <div class="quoTbl" fxLayoutAlign="center center"> -->
       <!--Comparision Tool-->
-      <mat-table [dataSource]="dsPolicyCov" *ngIf="dsPolicyCov.length > 0" class="mat-elevation-z0 mt-30 quo-tbl">
+      <!-- <mat-table [dataSource]="dsPolicyCov" *ngIf="dsPolicyCov.length > 0" class="mat-elevation-z0 mt-30 quo-tbl">
         <ng-container matColumnDef="comparison">
           <mat-header-cell *matHeaderCellDef> </mat-header-cell>
           <mat-cell *matCellDef="let element" class="mat-cell-content"> {{element.comparison}} </mat-cell>
-        </ng-container>
+        </ng-container> -->
         <!-- Prudential Column -->
-        <ng-container matColumnDef="prudential">
+        <!-- <ng-container matColumnDef="prudential">
           <mat-header-cell fxLayoutAlign="center center" *matHeaderCellDef>Prudential</mat-header-cell>
           <mat-cell fxLayoutAlign="center center" *matCellDef="let element">{{element.prudential}}
           </mat-cell>
-        </ng-container>
+        </ng-container> -->
         <!-- New York Life Column -->
-        <ng-container matColumnDef="nyLife">
+        <!-- <ng-container matColumnDef="nyLife">
           <mat-header-cell fxLayoutAlign="center center" *matHeaderCellDef> New York Life </mat-header-cell>
           <mat-cell fxLayoutAlign="center center" *matCellDef="let element">{{element.nyLife}}
           </mat-cell>
-        </ng-container>
+        </ng-container> -->
         <!-- Mass Mutual Column -->
-        <ng-container matColumnDef="massMutual">
+        <!-- <ng-container matColumnDef="massMutual">
           <mat-header-cell fxLayoutAlign="center center" *matHeaderCellDef> Mass Mutual </mat-header-cell>
           <mat-cell fxLayoutAlign="center center" *matCellDef="let element">{{element.massMutual}}
           </mat-cell>
-        </ng-container>
+        </ng-container> -->
         <!--  Liberty Mutual Column -->
-        <ng-container matColumnDef="libertyMutual">
+        <!-- <ng-container matColumnDef="libertyMutual">
           <mat-header-cell fxLayoutAlign="center center" *matHeaderCellDef> Liberty Mutual </mat-header-cell>
           <mat-cell fxLayoutAlign="center center" *matCellDef="let element">{{element.libertyMutual}}
           </mat-cell>
-        </ng-container>
-        <mat-header-row *matHeaderRowDef="displayedColumns" class="mat-cell-content"></mat-header-row>
+        </ng-container> -->
+        <!-- <mat-header-row *matHeaderRowDef="displayedColumns" class="mat-cell-content"></mat-header-row>
         <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
       </mat-table>
-    </div>
+    </div> -->
     <!-- Policy bar chart -->
-    <section fxLayoutAlign="center center">
+    <!-- <section fxLayoutAlign="center center">
       <ion-card class="chart mx-0">
         <ion-card-header>
           <h2 class="quo-sub-header" style="float:left">Policy Duration</h2>
@@ -205,45 +206,45 @@
             [legend]="true" chartType="bar" [options]="chartOption" [colors]="barChartLegendColors"></canvas>
         </ion-card-content>
       </ion-card>
-    </section>
-    <div class="quoTbl" fxLayoutAlign="center center">
+    </section> -->
+    <!-- <div class="quoTbl" fxLayoutAlign="center center"> -->
       <!--Comparision Tool-->
-      <mat-table [dataSource]="dsPolicyDuration" *ngIf="dsPolicyDuration.length > 0"
-        class="mat-elevation-z0 mt-30 quo-tbl">
-        <ng-container matColumnDef="comparison">
+      <!-- <mat-table [dataSource]="dsPolicyDuration" *ngIf="dsPolicyDuration.length > 0"
+        class="mat-elevation-z0 mt-30 quo-tbl"> -->
+        <!-- <ng-container matColumnDef="comparison">
           <mat-header-cell *matHeaderCellDef> </mat-header-cell>
           <mat-cell *matCellDef="let element" class="mat-cell-content"> {{element.comparison}} </mat-cell>
-        </ng-container>
+        </ng-container> -->
         <!-- Prudential Column -->
-        <ng-container matColumnDef="prudential">
+        <!-- <ng-container matColumnDef="prudential">
           <mat-header-cell fxLayoutAlign="center center" *matHeaderCellDef>Prudential</mat-header-cell>
           <mat-cell fxLayoutAlign="center center" *matCellDef="let element">{{element.prudential}}
           </mat-cell>
-        </ng-container>
+        </ng-container> -->
         <!-- New York Life Column -->
-        <ng-container matColumnDef="nyLife">
+        <!-- <ng-container matColumnDef="nyLife">
           <mat-header-cell fxLayoutAlign="center center" *matHeaderCellDef> New York Life </mat-header-cell>
           <mat-cell fxLayoutAlign="center center" *matCellDef="let element">{{element.nyLife}}
           </mat-cell>
-        </ng-container>
+        </ng-container> -->
         <!-- Mass Mutual Column -->
-        <ng-container matColumnDef="massMutual">
+        <!-- <ng-container matColumnDef="massMutual">
           <mat-header-cell fxLayoutAlign="center center" *matHeaderCellDef> Mass Mutual </mat-header-cell>
           <mat-cell fxLayoutAlign="center center" *matCellDef="let element">{{element.massMutual}}
           </mat-cell>
-        </ng-container>
+        </ng-container> -->
         <!--  Liberty Mutual Column -->
-        <ng-container matColumnDef="libertyMutual">
+        <!-- <ng-container matColumnDef="libertyMutual">
           <mat-header-cell fxLayoutAlign="center center" *matHeaderCellDef> Liberty Mutual </mat-header-cell>
           <mat-cell fxLayoutAlign="center center" *matCellDef="let element">{{element.libertyMutual}}
           </mat-cell>
-        </ng-container>
-        <mat-header-row *matHeaderRowDef="displayedColumns" class="mat-cell-content"></mat-header-row>
-        <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
-      </mat-table>
-    </div>
+        </ng-container> -->
+        <!-- <mat-header-row *matHeaderRowDef="displayedColumns" class="mat-cell-content"></mat-header-row>
+        <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row> -->
+      <!-- </mat-table> 
+    </div>-->
     <!-- Pie chart -->
-    <section class="ion-text-center px-3">
+    <!-- <section class="ion-text-center px-3">
       <ion-card class="chart mx-0">
         <ion-card-header fxLayoutAlign="center center">
           <h2 class="quo-sub-header">Cash Value</h2>
@@ -254,42 +255,42 @@
             [plugins]="doughnutChartPlugins"></canvas>
         </ion-card-content>
       </ion-card>
-    </section>
-    <div class="quoTbl" fxLayoutAlign="center center">
+    </section> -->
+    <!-- <div class="quoTbl" fxLayoutAlign="center center"> -->
       <!--Comparision Tool-->
-      <mat-table [dataSource]="dsCashvalue" *ngIf="dsCashvalue.length > 0" class="mat-elevation-z0 mt-30 quo-tbl">
+      <!-- <mat-table [dataSource]="dsCashvalue" *ngIf="dsCashvalue.length > 0" class="mat-elevation-z0 mt-30 quo-tbl">
         <ng-container matColumnDef="comparison">
           <mat-header-cell *matHeaderCellDef> </mat-header-cell>
           <mat-cell *matCellDef="let element" class="mat-cell-content"> {{element.comparison}} </mat-cell>
-        </ng-container>
+        </ng-container> -->
         <!-- Prudential Column -->
-        <ng-container matColumnDef="prudential">
+        <!-- <ng-container matColumnDef="prudential">
           <mat-header-cell fxLayoutAlign="center center" *matHeaderCellDef>Prudential</mat-header-cell>
           <mat-cell fxLayoutAlign="center center" *matCellDef="let element">{{element.prudential}}
           </mat-cell>
-        </ng-container>
+        </ng-container> -->
         <!-- New York Life Column -->
-        <ng-container matColumnDef="nyLife">
+        <!-- <ng-container matColumnDef="nyLife">
           <mat-header-cell fxLayoutAlign="center center" *matHeaderCellDef> New York Life </mat-header-cell>
           <mat-cell fxLayoutAlign="center center" *matCellDef="let element">{{element.nyLife}}
           </mat-cell>
-        </ng-container>
+        </ng-container> -->
         <!-- Mass Mutual Column -->
-        <ng-container matColumnDef="massMutual">
+        <!-- <ng-container matColumnDef="massMutual">
           <mat-header-cell fxLayoutAlign="center center" *matHeaderCellDef> Mass Mutual </mat-header-cell>
           <mat-cell fxLayoutAlign="center center" *matCellDef="let element">{{element.massMutual}}
           </mat-cell>
-        </ng-container>
+        </ng-container> -->
         <!--  Liberty Mutual Column -->
-        <ng-container matColumnDef="libertyMutual">
+        <!-- <ng-container matColumnDef="libertyMutual">
           <mat-header-cell fxLayoutAlign="center center" *matHeaderCellDef> Liberty Mutual </mat-header-cell>
           <mat-cell fxLayoutAlign="center center" *matCellDef="let element">{{element.libertyMutual}}
           </mat-cell>
-        </ng-container>
-        <mat-header-row *matHeaderRowDef="displayedColumns" class="mat-cell-content"></mat-header-row>
-        <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
-      </mat-table>
-    </div>
+        </ng-container> -->
+        <!-- <mat-header-row *matHeaderRowDef="displayedColumns" class="mat-cell-content"></mat-header-row>
+        <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row> -->
+      <!-- </mat-table> 
+    </div>-->
     <div class="mb-70 mt-50" fxLayoutGap="10px">
       <button mat-stroked-button class="btn-color" (click)="getPrevious()">{{BTN.BACK}}</button>
       <button mat-flat-button color="primary" (click)="goToNext()">{{BTN.NEXT}}</button>

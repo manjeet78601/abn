@@ -25,6 +25,7 @@ import { BanjrangBaanComponent } from './banjrang-baan/banjrang-baan.component';
 import { SunderkandComponent } from './sunderkand/sunderkand.component';
 import { HanumaanAshtakComponent } from './hanumaan-ashtak/hanumaan-ashtak.component';
 import { HanumaanArtiComponent } from './hanumaan-arti/hanumaan-arti.component';
+import { RamayanArtiComponent } from './ramayan-arti/ramayan-arti.component';
 
 @NgModule({
   imports: [
@@ -43,6 +44,7 @@ import { HanumaanArtiComponent } from './hanumaan-arti/hanumaan-arti.component';
     BanjrangBaanComponent,
     HanumaanAshtakComponent,
     HanumaanArtiComponent,
+    RamayanArtiComponent,
     // InsuranceCalculatorComponent,
     // FinancialBudgetComponent,
     SunderkandComponent,

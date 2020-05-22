@@ -17,6 +17,7 @@ import { BanjrangBaanComponent } from './banjrang-baan/banjrang-baan.component';
 import { SunderkandComponent } from './sunderkand/sunderkand.component';
 import { HanumaanAshtakComponent } from './hanumaan-ashtak/hanumaan-ashtak.component';
 import { HanumaanArtiComponent } from './hanumaan-arti/hanumaan-arti.component';
+import { RamayanArtiComponent } from './ramayan-arti/ramayan-arti.component';
 
 const routes: Routes = [
   // {
@@ -74,6 +75,10 @@ const routes: Routes = [
   {
     path: 'hanumaan-arti',
     component: HanumaanArtiComponent
+  },
+  {
+    path: 'ramayan-arti',
+    component: RamayanArtiComponent
   },
   {
     path: '',

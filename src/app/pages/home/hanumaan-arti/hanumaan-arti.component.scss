@@ -1,122 +1,212 @@
-mat-icon {
-    float: right;
+.choose-plan-img {
+    width: 302px;
+    height: 240px;
   }
-  
-  .page-header-health {
-    padding: 20px 0px;
-    h5 {
-      font-family: Proxima Soft;
-      font-size: 24px;
-      font-weight: bold;
-      color: #fff!important;
-    //   padding: 10px 20px;
-    }
+  .plan-card {
+    max-width: 400px;
+    background-color: darkred;
   }
-  .health-header {
-    font-family: Playfair Display;
-    font-size: 20px;
-    line-height: 25px;
-   
-    color: #fff;
-    white-space: pre-line;
-  }
-  .plan-content-health {
+  .plan-sub-header {
     font-family: Proxima Soft;
     font-size: 16px;
-    color: #000 !important;
+    color: #070707;
+    text-align: center;
   }
-  .que-header2 {
-    margin: 14px 0px 0px 0px;
+  
+  .mat-card {
+    margin-top: 2px;
+    padding: 0px !important;
+  }
+  
+  .mat-card-content block2{
+    display: none !important;
+  }
+  
+  [hidden] {
+    display: none !important;
+  }
+  .no-indicators .carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: 116px;
+    left: 0;
+    z-index: 15;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    padding-left: 0;
+    margin-right: 15%;
+    margin-left: 15%;
+    list-style: none;
+  }
+  .chartjsLegend li span {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 5px;
+    border-radius: 25px;
+  }
+  
+  
+  .wrapper-plan {
+    padding: 10px 20px;
+  }
+  
+  .btn-mat-card {
+    font-family: Proxima Soft;
+    font-size: 16px;
+    background-color: #f8f8f8;
+    color: #cccccc;
+  }
+  
+  .header-title {
+    font-family: Playfair Display;
+    font-weight: bold;
+    font-size: 24px;
+    color: #fff;
+    margin-top: 10px;
+  
+  }
+  .header-content {
+    font-family: Playfair Display;
+    // font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+    margin-top: 10px;
+    white-space: pre-line;
+  }
+  
+  .exp-header {
     font-family: Proxima Soft;
     font-size: 14px;
     font-weight: bold;
-    line-height: 1.5em;
-    display: block;
+    color: #070707;
+    text-align: left;
+  }
+  .comp-header-title {
+    padding-top: 10px;
+    width: 302px;
+  }
+  p {
+    font-family: Lato;
   }
   
-  .wrapper-plan1 {
-    padding: 10px 20px;
+  .heart-icon {
+    color: #FAEF54;
+    border: thin;
+    border-color: #E5DA3F;
   }
-  .example-full-width {
-    width: 40%;
-    text-align: center;
-    margin-right: 3%;
+  .heart-grey-icon {
+    color: #D9D9D9;
   }
-  .f-w{
-    width: 50%;
+  ion-icon {
+    font-size: 14px;
   }
-  .full-width{
-    width:100%;
-  
-   }
-  
-  .align-end1 {
-    text-align: center !important;
+  .quo-btn {
+    margin-top: 30px !important;
+    margin-bottom: 20px;
   }
-  
-  .mat-form-field-flex {
-    display: grid !important;
-    height: 100px !important;
+  .quo-sub-header {
+    font-family: Proxima Soft;
+    font-size: 16px;
+    color: #070707;
+    text-align: left;
+    padding-left: 10px;
+    font-weight: bold;
   }
-  
-  ::ng-deep {
-    .mat-form-field-wrapper {
-      padding-bottom: 0 !important;
+  .comment-txt {
+    font-family: Proxima Soft;
+    font-size: 16px;
+    color: #070707;
+    text-align: left;
+  }
+  ion-grid {
+    ion-card {
+      width: 100%;
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+      padding: 0 !important;
+      margin-top: 0px !important;
     }
+  }
+  .pad-10 {
+    padding-left: 10px;
+  }
+  .marg-10px {
+    margin-left: 10px;
+  }
+  .label-inline {
+    display: inline-block;
+  }
+  .ml-5{
+    margin-left: 5px; 
   }
   .btn-acc{
     font-family: Proxima Soft;
     font-size: 16px;
     color: #CCCCCC;
+    margin-bottom: 20px;
   }
   .btn-border{
     border-radius: 2px;
     border-color: #00B5AD;
     margin-right: 10px;
   }
-  .col-wht {
-    color: #ffffff;
+  
+  .quo-tbl {
+    height: 107px;
+    min-width: 340px;
+    border-top: 1px solid #e2e2e3 !important;
+    border-right: 1px solid #e2e2e3 !important;
+    margin-left: 15px;
+    margin-right: 15px;;
   }
-  .w-90 {
-    width: 90%;
+  .mat-row:nth-child(odd) {
+    background-color: #fafafb;
   }
-  .healthInp{
+  mat-header-cell {
+    background: #fafafb;
+    padding: 2px !important;
+    border-left: 1px solid #e2e2e3;
+    font-family: Lato;
+    font-size: 12px;
+    color:#000000 ;
+    font-weight: bold;
+    text-align: center;
+  }
+  mat-cell {
     font-family: Proxima Soft;
-    font-size: 16px;
-    color:#F76A71;
-    position: absolute;
-    top: 2px;
-    left: 5px;
+    font-size: 12px;
+    color: #000;
+    padding: 2px !important;
+    border-left: 1px solid #e2e2e3;
   }
-  .heightUnit{
+  .mat-cell-content {
     font-family: Proxima Soft;
-    font-size: 16px;
-    position: absolute;
-    left: 16px;
-    top: 2px;
+    font-size: 12px;
+    color: #000000;
+    text-align: left;
   }
-  .healthUnit{
-    font-family: Proxima Soft;
-    font-size: 16px;
-    position: absolute;
-    left: 30px;
-    top: 1px;
+  .btn-color{
+    border:1px solid #00B5AD;
+    color:black;
   }
-  ::ng-deep .mat-slider .mat-slider-thumb {
-    width: 25px;
-    height: 25px;
-    background-color: ghostwhite;
-    border: 1px solid #eee;
-    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.23);
-    position: absolute;
-    right: -11px;
-    bottom: -11px;
+  .ml-2{
+    margin-left: 2px;
   }
-  .val {
-  color: #F76A71;
+  
+  ion-card {
+    transition: none !important;
+    box-shadow: none !important;
+    width: 100% !important;
   }
-  .mat-form-field-appearance-outline .mat-form-field-flex {
-    &.notes {
-      padding: 0;
-    }
+  .chart {
+    width: 100%;
   }
+  .quoTbl{
+    margin-top: -40px;
+  }
+  
+  
+  
